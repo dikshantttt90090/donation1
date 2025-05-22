@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate via eSewa - Help Me Get a New Phone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e3f2fd;
+      text-align: center;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1565c0;
+    }
+    .esewa-id {
+      font-size: 1.5em;
+      color: #2e7d32;
+      margin-top: 20px;
+    }
+    .copy-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .copy-button:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Help Me Get a New Phone</h1>
+    <p>My phone is broken, and I’m raising funds to buy a new one. You can help by sending a donation via eSewa. Every little bit counts!</p>
+
+    <p class="esewa-id">eSewa ID: <strong id="esewaId">9818899656</>
+    <button class="copy-button" onclick="copyEsewa()">Copy eSewa ID</button>
+
+    <p style="margin-top: 30px; color: #888;">dherai thulo sayog ko lagi dhanyabaad
+
+  </div>
+
+  <script>
+    function copyEsewa() {
+      const esewaId = document.getElementById("esewaId").innerText;
+      navigator.clipboard.writeText(esewaId);
+      alert("eSewa ID copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
